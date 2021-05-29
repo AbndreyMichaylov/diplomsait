@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" href="{% static 'site.css' %}">
+    <link rel="stylesheet" href="{% static 'site/site.css' %}">
 </head>
 <body>
     <div class="content">
@@ -12,7 +12,7 @@
             <p class="body_title">Smart Finder</p>
         </nav>
         <p class="site_description">Данный ресурс переводит текст с изображений, выберите способ загрузки изображения и пользуйтесь!</p>
-        <img class="downloaded_img" src="{% static 'images/load_img.png' %}">
+        <img class="downloaded_img" src="{% static 'site/images/load_img.png' %}">
         <p class="translate_text">Язык перевода</p>
         <select class="language_selector">
             <option value="ru_RU">Русский</option>
@@ -23,7 +23,7 @@
         <textarea class="result">Здесь будет результат перевода</textarea>
         <img class="load_image">
         <footer>Михайлов Андрей</footer>
-        <script src="{% static 'index.js' %}"></script>
+        <script src="{% static 'site/index.js' %}"></script>
     </div>
 </body>
 </html>
