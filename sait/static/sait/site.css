@@ -1,0 +1,98 @@
+    body{
+        margin: 0px;
+    }
+
+    .content{
+        display: flex;
+        flex-direction: column;
+        background-color: #f5dcdc;
+        align-items: center;
+    }
+
+    .site_description{
+        margin: 40px;
+        font-size: 16pt;
+    }
+
+    .language_selector {
+        width: 120px;
+        height: 30px;
+        border: 1px solid #999;
+        font-size: 18px;
+        color: #2B0C4C;
+        background-color: #eee;
+        border-radius: 5px;
+        box-shadow: 4px 4px #ccc;
+        margin-bottom: 30px;
+    }
+
+    .translate_text{
+        text-align: center;
+        font-size: 16pt;
+    }
+
+    nav{
+        background-color: #6DA2DE;
+        width: 100%;
+    }
+
+    body {
+        font-family: CousineRegular;
+    }
+
+    .body_title{
+        font-size: 23pt;
+        text-align: center;
+        font-family: CousineBold;
+        color: #2B0C4C;
+    }
+
+    .downloaded_img{
+        border: #350C4D solid 2px;
+        max-width: 500px;
+        max-height: auto;
+        box-shadow: 0 0 20px rgba(0,0,0,0.5);
+        border-radius: 10px;
+    }
+
+    .result{
+        font-size: 15pt;
+        white-space: pre-line;
+        width: 1000px;   
+        height: 300px;
+        max-height: auto;
+        max-width: 20%;
+    }
+
+    .send_button{
+        margin: 1%;
+        border-radius: 5px;
+        box-shadow: 4px 4px #ccc;
+        border: 1px solid #999;
+        font-size: 18px;
+        width: 200px;
+        height: 70px;
+    }
+
+    .file_selector{
+        border-radius: 5px;
+        box-shadow: 4px 4px #ccc;
+        border: 1px solid #999;
+        font-size: 18px;
+    }
+
+    footer{
+        background-color: #6DA2DE;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    @font-face {
+        font-family: CousineRegular;
+        src: url(fonts/Cousine/Cousine-Regular.ttf);
+    }
+
+    @font-face {
+        font-family: CousineBold;
+        src: url(fonts/Cousine/Cousine-Bold.ttf);
+    }
