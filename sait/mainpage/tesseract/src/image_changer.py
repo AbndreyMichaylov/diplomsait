@@ -3,7 +3,7 @@ import os
 import numpy as np
 from pathlib import Path
 
-save_root = '/PreparedImages/'
+save_root = 'PreparedImages/'
 
 def prepare_image(img_src:str, image_name:str):
     print(img_src)

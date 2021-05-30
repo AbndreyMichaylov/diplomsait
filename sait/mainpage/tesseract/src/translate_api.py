@@ -8,7 +8,6 @@ from langdetect import detect
 from .langs import Langs
 from pathlib import Path
 
-pytesseract.pytesseract.tesseract_cmd = r'C:\Users\cjcbc\Desktop\diplom_sait\sait\mainpage\tesseract\Tesseract-OCR\tesseract.exe'
 
 def translate_image(img_src: str, img_name: str, lang_to: str):
     prepared_image = prepare_image(img_src, img_name)                           
