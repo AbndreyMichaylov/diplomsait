@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-x6nj1ldv(&q76rtu*8s=or67if2wi$798==wz1=ezc0$a^_sqq
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS =['imagetranslate.xyz', 'www.imagetranslate.xyz']
+ALLOWED_HOSTS =['localhost','194.58.120.112','imagetranslate.xyz', 'www.imagetranslate.xyz']
 
 # Application definition
 
@@ -56,7 +56,7 @@ ROOT_URLCONF = 'sait.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['diplomsait/sait/temp',],
+        'DIRS': ['temp',],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -120,14 +120,13 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = '../sait/media/'
+MEDIA_ROOT = 'media/'
 
 STATIC_URL = '/static/'
-#STATIC_ROOT = '/sait/sait/static/'
+STATIC_ROOT = 'static'
 
 STATICFILES_DIRS = [
     BASE_DIR / "sait/static",
-    '/www/imagetranslate.xyz/diplomsait/sait/sait/static',
 ]
 
 # Default primary key field type
