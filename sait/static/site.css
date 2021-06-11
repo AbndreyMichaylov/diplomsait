@@ -1,94 +1,140 @@
-    body{
-        margin: 0px;
-    }
+body{
+    margin: 0px;
+    background-color: #f5dcdc;
+}
 
-    .content{
-        display: flex;
-        flex-direction: column;
-        background-color: #f5dcdc;
-        align-items: center;
-    }
+.con2_block{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content:center;
+}
 
-    .site_description{
-        margin: 40px;
-        font-size: 16pt;
-    }
+.image_block{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+}
 
-    .language_selector {
-        width: 120px;
-        height: 30px;
-        border: 1px solid #999;
-        font-size: 18px;
-        color: #2B0C4C;
-        background-color: #eee;
-        border-radius: 5px;
-        box-shadow: 4px 4px #ccc;
-        margin-bottom: 30px;
-    }
+.lang_block{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 8;
+    justify-content: right;
+    align-items:flex-end;
+    margin-right: 3%;
+}
 
-    .translate_text{
-        text-align: center;
-        font-size: 16pt;
-    }
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-    nav{
-        background-color: #6DA2DE;
-        width: 100%;
-    }
+.site_description{
+    margin: 40px;
+    font-size: 16pt;
+}
 
-    body {
-        font-family: CousineRegular;
-    }
+.language_selector {
+    width: 120px;
+    height: 30px;
+    border: 1px solid #999;
+    font-size: 18px;
+    color: #2B0C4C;
+    background-color: #eee;
+    border-radius: 5px;
+    box-shadow: 4px 4px #ccc;
+    margin-bottom: 30px;
+}
 
-    .body_title{
-        font-size: 23pt;
-        text-align: center;
-        font-family: CousineBold;
-        color: #2B0C4C;
-    }
+.translate_text{
+    text-align: right;
+    font-size: 16pt;
+}
 
-    .downloaded_img{
-        border: #350C4D solid 2px;
-        max-width: 500px;
-        max-height: auto;
-        box-shadow: 0 0 20px rgba(0,0,0,0.5);
-        border-radius: 10px;
-    }
+nav{
+    background-color: #6DA2DE;
+    text-align: center;
+}
 
-    .result{
-        font-size: 5pt;
-        white-space: pre-line;
-    }
+body {
+    font-family: CousineRegular;
+}
 
-    .send_button{
-        margin: 1%;
-        border-radius: 5px;
-        box-shadow: 4px 4px #ccc;
-        border: 1px solid #999;
-        font-size: 18px;
-        width: 200px;
-        height: 70px;
-    }
+.body_title{
+    font-size: 23pt;
+    text-align: center;
+    font-family: CousineBold;
+    color: #2B0C4C;
+}
 
-    .file_selector{
-        border-radius: 5px;
-        box-shadow: 4px 4px #ccc;
-        border: 1px solid #999;
-        font-size: 18px;
-    }
+.downloaded_img{
+    border: #350C4D solid 2px;
+    max-width: 20%;
+    max-height: auto;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    border-radius: 10px;
+}
 
-    footer{
-        background-color: #6DA2DE;
-        width: 100%;
-        margin-top: 20px;
-    }
+.result{
+    font-size: 15pt;
+    white-space: pre-line;
+    width: 1500px;
+    max-width: 40%;
+    height: 300px;
+    max-height: 70%;
+    
+}
 
-    @font-face {
-        font-family: CousineRegular;
-        src: url(fonts/Cousine/Cousine-Regular.ttf);
-    }
+.res_area{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 1%;
+}
 
-    @font-face {
-        font-family: CousineBold;
-        src: url(fonts/Cousine/Cousine-Bold.ttf);
-    }
+.send_button{
+    margin: 1%;
+    border-radius: 5px;
+    box-shadow: 4px 4px #ccc;
+    border: 1px solid #999;
+    font-size: 18px;
+    width: 200px;
+    height: 70px;
+}
+
+.copy_to_clipboard{
+    margin: 1%;
+    border-radius: 5px;
+    box-shadow: 4px 4px #ccc;
+    border: 1px solid #999;
+    font-size: 18px;
+    width: 200px;
+    height: 70px;
+}
+
+.file_selector{
+    border-radius: 5px;
+    box-shadow: 4px 4px #ccc;
+    border: 1px solid #999;
+    font-size: 18px;
+    margin-bottom: 1%;
+}
+
+footer{
+    background-color: #6DA2DE;
+    width: 100%;
+    margin-top: 20px;
+}
+
+@font-face {
+    font-family: CousineRegular;
+    src: url(fonts/Cousine/Cousine-Regular.ttf);
+}
+
+@font-face {
+    font-family: CousineBold;
+    src: url(fonts/Cousine/Cousine-Bold.ttf);
+}
