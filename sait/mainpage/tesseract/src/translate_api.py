@@ -17,16 +17,16 @@ def translate_image(img_src: str, img_name: str, lang_to: str):
     print(cleaned_text)
     try:
         detected_lang = detect(cleaned_text)  
+        print(f'------------------{detected_lang}----------------')
+        from_lang = get_lang(detected_lang)                                         
+        print(f'------------------{from_lang}----------------')         
+        translated_text = Translator.translate(from_lang, lang_to, cleaned_text)    
+        os.remove(prepared_image)
+        print(prepared_image)
+        return translated_text
     except:
-	detected_lang = 'ru'                                  
-        return 'На картинке нет текста'
-    print(f'------------------{detected_lang}----------------')
-    from_lang = get_lang(detected_lang)                                         
-    print(f'------------------{from_lang}----------------')         
-    translated_text = Translator.translate(from_lang, lang_to, cleaned_text)    
-    os.remove(prepared_image)
-    print(prepared_image)
-    return translated_text
+	    detected_lang = 'ru'  
+        return 'не удалось распознать текст'                                
 
 
 #Get lang format for transalte api
