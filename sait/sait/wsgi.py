@@ -11,7 +11,9 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'sait.settings2')
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'sait.settings')
+
+print('wsgi started')
 
 application = get_wsgi_application()
