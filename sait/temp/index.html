@@ -7,32 +7,36 @@
     <link rel="stylesheet" href="{% static 'site.css' %}">
 </head>
 <body>
+    <nav class="nav_bar"> 
+        <span class="body_title">Smart Finder</span>
+    </nav>
     <div class="content">
-        <nav> 
-            <p class="body_title">Smart Finder</p>
-        </nav>
-        <p class="site_description">Данный ресурс переводит текст с изображений, выберите способ загрузки изображения и пользуйтесь!</p>
-        <img class="downloaded_img" src="{% static 'images/load_img.png' %}">
-        <p class="translate_text">Язык перевода</p>
-        <select class="language_selector">
-            <option value="ru_RU">Русский</option>
-            <option value="uk_UA">Ураинский</option>
-            <option value="fr_FR">Французский</option>
-            <option value="de_DE">Немецкий</option>
-            <option value="zh-Hans_CN">Китайский</option>
-            <option value="ar_EG">Арабский</option>
-            <option value="ja_JP">Японский</option>
-            <option value="tr_TR">Турецкий</option>
-            <option value="hi_IN">Хинди</option>
-            <option value="kk_KZ">Казахстанский</option>
-        </select>
+        <p class="site_description">Данный ресурс переводит текст с изображений, выберите способ загрузки изображения и
+            пользуйтесь!</p>
+                <p class="translate_text">Язык перевода</p>
+                <select class="language_selector">
+                    <option value="ru_RU">Русский</option>
+                    <option value="uk_UA">Ураинский</option>
+                    <option value="fr_FR">Французский</option>
+                    <option value="de_DE">Немецкий</option>
+                    <option value="zh-Hans_CN">Китайский</option>
+                    <option value="ar_EG">Арабский</option>
+                    <option value="ja_JP">Японский</option>
+                    <option value="tr_TR">Турецкий</option>
+                    <option value="hi_IN">Хинди</option>
+                    <option value="kk_KZ">Казахстанский</option>
+                </select>
+                <input type="file" class="file_selector">
+                <img class="downloaded_img" src="{% static 'images/load_img.png' %}">
             {% csrf_token %}
-            <input type="file" class="file_selector">
-        <button class="send_button" type="button">Перевести текст</button>
-        <textarea class="result">Здесь будет результат перевода</textarea>
+            <div class="res_area">
+                <button class="send_button" type="button">Перевести текст</button>
+                <button class="copy_to_clipboard">Копировать в буфер обмена</button>
+            </div>
+            <textarea class="result">Здесь будет результат перевода</textarea>
         <img class="load_image">
-        <footer>Михайлов Андрей</footer>
-        <script src="{% static 'index.js' %}"></script>
     </div>
+    <footer>Михайлов Андрей</footer>
+    <script src="{% static 'index.js' %}"></script>
 </body>
 </html>

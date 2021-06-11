@@ -5,6 +5,6 @@ class Langs:
     serializer = LangSerializer
 
     def get_langs():
-        with open(settings.JSONDEPLOYPATH, 'r' , encoding='utf-8') as langs:
+        with open(settings.JSONLOCALPATH, 'r' , encoding='utf-8') as langs:
             data = LangSerializer.parse_raw(langs.read())
             return data
