@@ -16,7 +16,8 @@ def translate_image(img_src: str, img_name: str, lang_to: str):
     cleaned_text = text.translate(trantab)
     try:
         detected_lang = detect(cleaned_text)  
-    except:                                  
+    except:
+	detected_lang = 'ru'                                  
         return 'На картинке нет текста'
     print(f'------------------{detected_lang}----------------')
     from_lang = get_lang(detected_lang)                                         
