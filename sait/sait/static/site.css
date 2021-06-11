@@ -1,11 +1,33 @@
     body{
         margin: 0px;
+        background-color: #f5dcdc;
+    }
+
+    .con2_block{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content:center;
+    }
+
+    .image_block{
+        display: flex;
+        flex-direction: column;
+        flex-grow: 2;
+    }
+
+    .lang_block{
+        display: flex;
+        flex-direction: column;
+        flex-grow: 8;
+        justify-content: right;
+        align-items:flex-end;
+        margin-right: 3%;
     }
 
     .content{
         display: flex;
         flex-direction: column;
-        background-color: #f5dcdc;
         align-items: center;
     }
 
@@ -27,13 +49,13 @@
     }
 
     .translate_text{
-        text-align: center;
+        text-align: right;
         font-size: 16pt;
     }
 
     nav{
         background-color: #6DA2DE;
-        width: 100%;
+        text-align: center;
     }
 
     body {
@@ -49,7 +71,7 @@
 
     .downloaded_img{
         border: #350C4D solid 2px;
-        max-width: 500px;
+        max-width: 20%;
         max-height: auto;
         box-shadow: 0 0 20px rgba(0,0,0,0.5);
         border-radius: 10px;
@@ -58,13 +80,32 @@
     .result{
         font-size: 15pt;
         white-space: pre-line;
-        width: 1000px;   
+        width: 1500px;
+        max-width: 40%;
         height: 300px;
-        max-height: auto;
-        max-width: 20%;
+        max-height: 70%;
+        
+    }
+
+    .res_area{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 1%;
     }
 
     .send_button{
+        margin: 1%;
+        border-radius: 5px;
+        box-shadow: 4px 4px #ccc;
+        border: 1px solid #999;
+        font-size: 18px;
+        width: 200px;
+        height: 70px;
+    }
+
+    .copy_to_clipboard{
         margin: 1%;
         border-radius: 5px;
         box-shadow: 4px 4px #ccc;
@@ -79,6 +120,7 @@
         box-shadow: 4px 4px #ccc;
         border: 1px solid #999;
         font-size: 18px;
+        margin-bottom: 1%;
     }
 
     footer{

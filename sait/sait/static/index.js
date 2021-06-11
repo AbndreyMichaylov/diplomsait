@@ -4,9 +4,17 @@ let loadImage = document.getElementsByClassName('load_image')[0];
 let sendButton = document.getElementsByClassName('send_button')[0];
 let langSelector = document.getElementsByClassName('language_selector')[0];
 let downloadedImage = document.getElementsByClassName('downloaded_img')[0];
-let loadImageSrc = 'static/images/load.gif';
+let copyToClipboardBtn = document.getElementsByClassName('copy_to_clipboard')[0];
+let loadImageSrc = 'static/images/load2.gif';
+
 
 sendButton.addEventListener('click', translate, false);
+console.log(copyToClipboardBtn);
+copyToClipboardBtn.addEventListener('click', async function(){
+    var resText = await resultText.select();
+    document.execCommand("copy");
+}, false);
+
 
 async function translate(){
     resultText.hidden = true;
