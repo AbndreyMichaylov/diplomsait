@@ -14,6 +14,7 @@ def translate_image(img_src: str, img_name: str, lang_to: str):
     text = pytesseract.image_to_string(Image.open(prepared_image))              
     trantab = str.maketrans(dict.fromkeys('\n'))                                
     cleaned_text = text.translate(trantab)
+    print(cleaned_text)
     try:
         detected_lang = detect(cleaned_text)  
     except:                                  
